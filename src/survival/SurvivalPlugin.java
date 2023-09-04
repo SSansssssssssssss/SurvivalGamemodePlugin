@@ -5,6 +5,7 @@ import arc.util.*;
 import mindustry.*;
 import mindustry.content.*;
 import mindustry.game.EventType.*;
+import mindustry.game.Rules.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.net.Administration.*;
@@ -15,6 +16,21 @@ public class ExamplePlugin extends Plugin{
     //called when game initializes
     @Override
     public void init(){
+        //Turn off waves
+        Rules.waveSending = false;
+        //Pvp enable
+        Rules.pvp = true;
+        //add auto pause
+        Rules.pvpAutoPause = true;
+        //make sure that it cant gg
+        Rules.canGameOver = false;
+        //disable schematics
+        Rules.schematicsAllowed = false;
+        //turn off fire
+        Rules.damageExplosions = false;
+
+        //EXAMPLES
+        
         //listen for a block selection event
         Events.on(BuildSelectEvent.class, event -> {
             if(!event.breaking && event.builder != null && event.builder.buildPlan() != null && event.builder.buildPlan().block == Blocks.thoriumReactor && event.builder.isPlayer()){
