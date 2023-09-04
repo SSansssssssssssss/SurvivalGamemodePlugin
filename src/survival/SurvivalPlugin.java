@@ -29,6 +29,7 @@ public class ExamplePlugin extends Plugin{
         //turn off fire
         Rules.damageExplosions = false;
 
+
         //EXAMPLES
         
         //listen for a block selection event
