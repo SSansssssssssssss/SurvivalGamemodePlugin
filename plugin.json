@@ -1,7 +1,7 @@
 {
-  "name": "ExamplePlugin",
-  "author": "Anuke",
-  "main": "example.ExamplePlugin",
-  "description": "A plugin to demonstrate some basic features.",
+  "name": "Survival Gamemode Plugin",
+  "author": "SSansssssssssssss/sksksk",
+  "main": "survival.survivalplugin",
+  "description": "A plugin to make a new gamemode called survival",
   "version": 1.0
 }
