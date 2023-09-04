@@ -1,7 +1,7 @@
 {
   "name": "Survival Gamemode Plugin",
   "author": "SSansssssssssssss/sksksk",
-  "main": "survival.survivalplugin",
+  "main": "survival.SurvivalPlugin",
   "description": "A plugin to make a new gamemode called survival",
   "version": 1.0
 }
